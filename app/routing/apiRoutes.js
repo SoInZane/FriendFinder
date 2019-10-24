@@ -5,7 +5,7 @@ module.exports = function (app) {
         res.json(friendsList);
     })
 
-    // Create new friends
+    // Create new friends and post to the
     app.post("/api/friends", function (req, res) {
         var newFriend = req.body;
         var newScore = 0;
