@@ -19,7 +19,7 @@ module.exports = function (app) {
             var scoreDiff = 0;
             // loop through the scores and compare the friends
             for (var j = 0; j < newFriend.length; j++) {
-                scoreDiff += (Math.abs(parseInt(friendList[i].scores[j]) - parseInt(newFriendScores[j])));
+                scoreDiff += (Math.abs(parseInt(friendsList[i].scores[j]) - parseInt(newFriend[j])));
             }
             // push the results into the scoreArray
             scoreArray.push(scoreDiff);
